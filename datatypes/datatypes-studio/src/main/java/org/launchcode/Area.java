@@ -1,23 +1,35 @@
 package org.launchcode;
+
+import java.util.InputMismatchException;
 import java.util.Scanner;
+
 public class Area {
     public static void main(String[] args) {
+
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter a radius: ");
+        System.out.println("Enter radius:");
+        boolean isValidNum = false;
+        double radius = input.nextDouble();
+        try {
+            while (!isValidNum)
+                if (radius < 0) {
+                    System.out.println("Enter a positive number for a radius!");
+                    radius= input.nextDouble();
 
-        if(input.hasNextDouble()){
-            double radius = input.nextDouble();
-            if (radius<0){
-                while (radius<0) {
-                    System.out.println("Enter a valid radius (in positive number): ");
-                    radius = input.nextDouble();
                 }
-            }
-            System.out.println("The area of a circle of radius " + radius +" is "+Circle.getArea(radius));
+                else {
+                    isValidNum = true;
+                    Double areaCircle= Circle.getArea(radius);
+                    System.out.println("Area of the circle is: " + areaCircle );
+                }
 
-            } else{
-            System.err.println("Enter a valid radius (in positive number): ");
-             }
+        }
+        catch (InputMismatchException e) {
+            System.out.println("Not a valid input! Quitting.");
+        }
+
+
         input.close();
+
     }
 }
