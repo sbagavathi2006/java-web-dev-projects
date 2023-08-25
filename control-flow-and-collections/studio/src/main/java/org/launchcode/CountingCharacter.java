@@ -7,7 +7,6 @@ import java.util.Map;
 public class CountingCharacter {
 public static void  main(String[] args) {
     String str = "apple r";
-
     char[] charactersInString = str.toCharArray();
     //char[] charInStringNew;
     HashMap<Character, Integer> countChar  = new HashMap<>();
