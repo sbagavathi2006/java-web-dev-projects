@@ -39,14 +39,6 @@ public class Menu {
             newItemCheck(i);
         }
     }
-//    public void printMenu(){
-//        System.out.println("MENU ITEMS");
-//        System.out.println("Menu last updated on: "+getLastUpdated()+"\n");
-//        for (MenuItem i:items ){
-//            System.out.println(i);
-//            newItemCheck(i);
-//        }
-//    }
     public void setLastUpdated(Date lastUpdated) {
         this.lastUpdated = lastUpdated;
     }
