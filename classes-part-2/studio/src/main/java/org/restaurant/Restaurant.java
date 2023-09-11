@@ -18,8 +18,11 @@ public class Restaurant {
         menu.addItem(item);
         menu.addItem(item1);
         menu.addItem(item2);
-//        menu.addItem(item3);
+
+        //        menu.addItem(item3);
         menu.removeItem(item);
         menu.printMenu();
+        System.out.println("is item and item1 are equal? ");
+        System.out.println(item.equals(item1));
     }
 }

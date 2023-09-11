@@ -31,10 +31,6 @@ public class Menu {
             System.out.println("\n");
         }
     }
-    //determine whether or not two menu items are equal
-    public void uniqueMenuItem(){
-
-    }
     public void printMenu(){
         System.out.println("MENU ITEMS");
         System.out.println("Menu last updated on: "+getLastUpdated()+"\n");
@@ -43,6 +39,14 @@ public class Menu {
             newItemCheck(i);
         }
     }
+//    public void printMenu(){
+//        System.out.println("MENU ITEMS");
+//        System.out.println("Menu last updated on: "+getLastUpdated()+"\n");
+//        for (MenuItem i:items ){
+//            System.out.println(i);
+//            newItemCheck(i);
+//        }
+//    }
     public void setLastUpdated(Date lastUpdated) {
         this.lastUpdated = lastUpdated;
     }
