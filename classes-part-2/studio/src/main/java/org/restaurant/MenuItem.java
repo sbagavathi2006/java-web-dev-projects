@@ -14,7 +14,7 @@ public class MenuItem {
         this.category = c;
         this.isNew = iN;
     }
-    //public boolean getIsNew(boolean isNew){ return isNew;}
+    public boolean getIsNew(){ return isNew;}
     public void setPrice(double price) {
         this.price = price;
     }
@@ -46,7 +46,7 @@ public class MenuItem {
         return false;
     }
         MenuItem menuItem = (MenuItem) toBeCompared;
-
+        //return isNew == menuItem.isNew;
         return Double.compare(menuItem.price, price) == 0 &&
                 isNew == menuItem.isNew &&
                 description.equals(menuItem.description) &&
