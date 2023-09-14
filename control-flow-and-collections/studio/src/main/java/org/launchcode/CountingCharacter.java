@@ -47,20 +47,6 @@ public class CountingCharacter {
     }
 }
 
-        //System.out.println(Arrays.toString(charactersInString));
-        //System.out.println(charactersInString[0]);
-
-//    for (int i=0; i<str.length(); i++){
-//
-//        char findStr = charactersInStringDup[i];
-//        int total = 0;
-//        for(int j=0; j<str.length(); j++) {
-//            if (findStr == charactersInStringDup[j]) {
-//                total += 1;
-//            }
-//        }
-//        System.out.println(charactersInStringDup[i] + ": " + total);
-//    }
 
 
 
