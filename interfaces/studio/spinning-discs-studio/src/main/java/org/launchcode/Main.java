@@ -7,6 +7,7 @@ public class Main {
 
         ArrayList<String> tracks = new ArrayList<>();
         tracks.add("Under The Bridge");
+
         tracks.add("Californication");
 
         // TODO: Declare and initialize a CD and a DVD object.

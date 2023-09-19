@@ -7,6 +7,7 @@ public class CD extends BaseDisc implements OpticalDisk{
     private ArrayList<String> tracks = new ArrayList<>();
     private String artist;
 
+
     public CD(String deviceType, double duration, double storageCapacity, double usedStorage, String formatType, String title, ArrayList<String> tracks, String artist) {
         super(deviceType, duration, storageCapacity, usedStorage, formatType, title);
         this.tracks = tracks;

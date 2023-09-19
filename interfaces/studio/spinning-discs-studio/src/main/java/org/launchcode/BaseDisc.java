@@ -66,6 +66,7 @@ public abstract class BaseDisc {
         return usedStorage;
     }
 
+
     public void setUsedStorage(double usedStorage) {
         this.usedStorage = usedStorage;
     }
